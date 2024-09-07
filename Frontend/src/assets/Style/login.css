@@ -1,0 +1,27 @@
+input{
+    padding-left: 15px;
+}
+
+::placeholder{
+    text-align: left;
+}
+
+.formContainer{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    animation: swing 7s ease-in-out infinite;
+}
+
+
+@keyframes swing{
+
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); } /* Move up */
+    50% { transform: translateY(0); }     /* Back to original position */
+    75% { transform: translateY(10px); }  /* Move down */
+    100% { transform: translateY(0); }    /* Back to original position */
+
+
+
+
+
+}

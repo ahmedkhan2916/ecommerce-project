@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1024px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .cardsContainer{
+
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    .mainCont{
+
+        padding-top: 3rem;
+        
+
+
+    }
+
+    .heading{
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        margin-top: 1rem;
+    }
+  }
