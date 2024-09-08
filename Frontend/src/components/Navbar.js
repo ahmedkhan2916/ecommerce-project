@@ -39,12 +39,12 @@ function Navbar({user}) {
 
     if(status==true)
     {
-      sessionStorage.setItem("status",status);
-      sessionStorage.setItem("username",userN);
+      localStorage.setItem("status",status);
+      localStorage.setItem("username",userN);
     }
    
-    const Item=sessionStorage.getItem("status");
-    const Username=sessionStorage.getItem("username");
+    const Item=localStorage.getItem("status");
+    const Username=localStorage.getItem("username");
     
    
   
@@ -74,7 +74,7 @@ function Navbar({user}) {
   {
     dispatch(setStatusCode(false));
     localStorage.clear();
-    sessionStorage.clear();
+    // sessionStorage.clear();
     navigate("/users/login");
   }
 
@@ -94,10 +94,10 @@ function Navbar({user}) {
       <nav className='flex  w-1/4 items-center ml-14 navBar' id="myLinks">
         <ul className='flex w-full justify-evenly text-2xl ' >
                     
-          <a href="#"><li className='hover:bg-yellow-400 hover:text-white'>Home</li></a>
-          <a href="#"><li className='hover:bg-yellow-400 hover:text-white'>Items</li></a>
-          <a href="#"><li className='hover:bg-yellow-400 hover:text-white'>Contact Us</li></a>
-          <a href="#"><li className='hover:bg-yellow-400 hover:text-white'>About Us</li></a>
+          <a href="#"><li className='hover:bg-green-400 hover:text-white pt-2 pb-2 pl-3 pr-3 rounded-md'>Home</li></a>
+          <a href="#"><li className='hover:bg-green-400 hover:text-white pt-2 pb-2 pl-3 pr-3 rounded-md'>Items</li></a>
+          <a href="#"><li className='hover:bg-green-400 hover:text-white pt-2 pb-2 pl-3 pr-3 rounded-md'>Contact Us</li></a>
+          <a href="#"><li className='hover:bg-green-400 hover:text-white pt-2 pb-2 pl-3 pr-3 rounded-md'>About Us</li></a>
 
         </ul>
       </nav>
